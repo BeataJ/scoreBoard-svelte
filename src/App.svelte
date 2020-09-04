@@ -1,6 +1,7 @@
 <script>
   let name = 'Joe Doe';
   let points = 100;
+  let showControls = false;
 
   const addPoint = () => (points += 1);
   const removePoint = () => (points -= 1);
