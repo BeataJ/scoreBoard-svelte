@@ -10,6 +10,9 @@
   h1 {
     color: #204f6e;
   }
+  h3 {
+    margin-bottom: 10px;
+  }
 </style>
 
 <div class="container">
