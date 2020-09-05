@@ -22,6 +22,10 @@
     const newPlayer = e.detail;
     players = [...players, newPlayer];
   };
+
+  const removePlayer = (e) => {
+    players = players.filter((player) => player.name !== e.detail);
+  };
 </script>
 
 <Navbar />
