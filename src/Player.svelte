@@ -10,7 +10,7 @@
   const addPoint = () => (points += 1);
   const removePoint = () => (points -= 1);
   const toggleControls = () => (showControls = !showControls);
-  const onDelete = () => dispatch('removeplayer');
+  const onDelete = () => dispatch('removeplayer', name);
 </script>
 
 <style>
@@ -25,10 +25,10 @@
 <div class="card">
   <h1>
     {name}
-    <button class="btn btn-sm" on:click={toggleControls}>
+    <button class="btn btn-sl" on:click={toggleControls}>
       {#if showControls}-{:else}+{/if}
     </button>
-    <button class="btn btn-danger" on:click={onDelete}>x</button>
+    <button class="btn btn-danger btn-sm" on:click={onDelete}>x</button>
   </h1>
   <h3>Points: {points}</h3>
   {#if showControls}
