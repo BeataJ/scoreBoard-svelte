@@ -10,6 +10,7 @@
   const addPoint = () => (points += 1);
   const removePoint = () => (points -= 1);
   const toggleControls = () => (showControls = !showControls);
+  const onDelete = () => dispatch('removeplayer');
 </script>
 
 <style>
@@ -27,6 +28,7 @@
     <button class="btn btn-sm" on:click={toggleControls}>
       {#if showControls}-{:else}+{/if}
     </button>
+    <button class="btn btn-danger" on:click={onDelete}>x</button>
   </h1>
   <h3>Points: {points}</h3>
   {#if showControls}
