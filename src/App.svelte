@@ -17,6 +17,11 @@
       points: 34,
     },
   ];
+
+  const addPlayer = (e) => {
+    const newPlayer = e.detail;
+    players = [...players, newPlayer];
+  };
 </script>
 
 <Navbar />
