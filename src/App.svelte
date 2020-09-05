@@ -4,4 +4,6 @@
 </script>
 
 <Navbar />
-<div class="container" />
+<div class="container">
+  <Player />
+</div>
