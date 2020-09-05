@@ -20,5 +20,11 @@
 
 <Navbar />
 <div class="container">
-  <Player />
+  {#if players.length === 0}
+    <p>No Players</p>
+  {:else}
+    {#each players as player}
+      <Player nane={player.name} points={player.points} />
+    {/each}
+  {/if}
 </div>
