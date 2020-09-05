@@ -1,4 +1,8 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
+
+  const dispatch = createEventDispatcher();
+
   export let name;
   export let points;
   let showControls = false;
